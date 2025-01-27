@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex {
+    display: flex;
+}
+.navbar {
+    justify-content: space-around;
+}
+.mainlogoo {
+    font-size: 3rem;
+    color: blue;
+}
+.nav-links {
+    gap: 40px;
+    font-size: 3rem;
+}
+.link {
+    color: #344563;
+}
+#nav-icon {
+    display: none;
+}
