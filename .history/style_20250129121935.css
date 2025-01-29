@@ -252,11 +252,10 @@ body {
 }
 .contact-description {
     max-width: 569px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
     text-align: center;
     color: white;
-    max-height: 137px;
-
 }
 .contact-form {
     gap: 27px;
@@ -265,7 +264,6 @@ body {
     width: 100%;
     align-items: center;
 }
-
 .form-input {
     padding: 15px 16px;
     background-color: white;

@@ -184,13 +184,13 @@ body {
 
 .about {
     padding: 10%;
-    gap: 30px;
+    gap: 20px;
 }
 
 .about-intro {
     flex-direction: column;
     max-width: 447px;
-    max-height: 331px;
+    max-height: 311px;
     gap: 10px;
 }
 
@@ -220,7 +220,7 @@ body {
     font-size: 25px;
 }
 .about-lang {
-    gap: 20px;
+    gap: 50px;
     padding: 12px;
 }
 .about-lang-img {
@@ -241,22 +241,21 @@ body {
     background-image: url(/assets/contact\ form\ background\ shapes@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
-    border-top-left-radius: 100px;
-    padding: 100px 24px;
+    border-top-left-radius: 200px;
+    padding: 200px 0;
 }
 .contact-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
     color: white;
 }
 .contact-description {
     max-width: 569px;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    align-items: center;
     color: white;
-    max-height: 137px;
-
 }
 .contact-form {
     gap: 27px;
@@ -265,7 +264,6 @@ body {
     width: 100%;
     align-items: center;
 }
-
 .form-input {
     padding: 15px 16px;
     background-color: white;

@@ -265,7 +265,10 @@ body {
     width: 100%;
     align-items: center;
 }
-
+.contact-form ::before {
+    color: black;
+    width: 1%;
+}
 .form-input {
     padding: 15px 16px;
     background-color: white;
