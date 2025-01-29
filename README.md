@@ -1,6 +1,33 @@
-📗 Table of Contents 📖 About the Project 🛠 Built With Tech Stack Key Features 🚀 Live Demo 💻 Getting Started Setup Prerequisites Install Usage Run tests Deployment 👥 Authors 🔭 Future Features 🤝 Contributing ⭐️ Show your support 🙏 Acknowledgements ❓ FAQ (OPTIONAL) 📝 License 📖 [Protfolio-project] 🛠 Built With HTML5 Tech Stack Client Key Features Describe between 1-3 key features of the application.
+📗 Table of Contents 
+    📖 About the Project 🛠 Built With Tech Stack Key Features 
+    🚀 Live Demo 
+💻 Getting Started 
+    Setup 
+    Prerequisites 
+    Install 
+    Usage 
+    Run 
+    tests 
+    Deployment 
+👥 Authors 🔭 
+Future Features 
+🤝 Contributing 
+⭐️ Show your support 
+🙏 Acknowledgements 
+❓ FAQ 
+ 📝 License
+📖 [Protfolio-project] 
+  🛠 Built With HTML5 
+    Tech Stack 
+      Client 
+    Key Features 
+       Describe between 1-3 key features of the application.
 
-It has linters It has MIT license It has html It has CSS It has javascript (back to top)
+      It has linters 
+      It has MIT license 
+      It has html 
+      It has CSS 
+      It has javascript (back to top)
 
 🚀 Live Demo https://usmanghani-portfolio.netlify.app/
 
