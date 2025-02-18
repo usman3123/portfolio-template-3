@@ -58,16 +58,12 @@ arr = [
         year : "2025",
         cardimg :"/assets/card-4img.webp" 
     }
-];
-const body = document.querySelector("body");
-const overlay = document.querySelector(".overlay");
-const herooverlay = document.querySelector(".herostyle");
-const bodyy = document.querySelector(".wholebody");
-
-
+]
 document.addEventListener("DOMContentLoaded",()=> {
   const cards = document.querySelector(".cards");
   const bodyy = document.querySelector(".wholebody");
+  const heropage = document.querySelector(".hero-page");
+  const herooverlay = document.querySelector(".herostyle");
 
   arr.forEach((element) => {
       cards.innerHTML += `<div class="card flex">
@@ -95,6 +91,7 @@ document.addEventListener("DOMContentLoaded",()=> {
       document.querySelector(".container").style.display = "block"; 
     });
   });
+  
   function popup(element) {
     const popup = document.querySelector(".container");
       popup.innerHTML = 
@@ -133,31 +130,25 @@ document.addEventListener("DOMContentLoaded",()=> {
       </div>
               
       </div>`;
-
+      const body = document.querySelector("body");
+      const overlay = document.querySelector(".overlay");
+      const navicon = document.querySelector(".nav-icon");
+  
       document.querySelector("#close-popup").addEventListener("click", () => {
         popup.style.display = "none"; 
         bodyy.classList.remove("blur");
       });
     }
-
-    const navicon = document.querySelector(".nav-icon");
-
-    navicon.addEventListener("click",(e)=> {
-      herooverlay.classList.add("overlaystyle")   
-      herooverlay.style.display = "block"   
-      herooverlay.innerHTML = `
-      <i class="fa-solid fa-x" id= "closepopup" ></i>
-      <div class = "links-after-click">
-        <p><a class = "link" href="#myportfolio" >Portfolio</a></p>
-        <p><a class = "link" href="#myabout">About</a></p>
-        <p><a class = "link" href="#mycontact">Contact</a></p>
+    navicon.addEventListener("click",()=> {
+      console.log("clicked");
+      heropage.classList.add("herostyle")
+      bodyy.classList.add("blur")
+      herooverlay.innerHTML = `<div>
+        <p>Portfolio</p>
+        <p>About</p>
+        <p>Contact</p>
       </div>`
-      const closeoverlay = document.querySelector("#closepopup");
-      closeoverlay.addEventListener("click",() => {
-        herooverlay.classList.remove("overlaystyle");
-        herooverlay.style.display = "none"   
-      })
-    })
+  })
   })
 
 

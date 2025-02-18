@@ -138,7 +138,7 @@ bottom: 2500px;
     background-color: black;
     height: 26px;
     border-radius: 15px;
-    width: 28px;
+    width: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,7 +380,8 @@ html {
     top: 228%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: white;    
+    background-color: white;
+    
 }
 .overlay {
     width: 100%;

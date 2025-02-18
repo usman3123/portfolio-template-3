@@ -58,107 +58,83 @@ arr = [
         year : "2025",
         cardimg :"/assets/card-4img.webp" 
     }
-];
+]
+
+const cards = document.querySelector(".cards");
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
-const herooverlay = document.querySelector(".herostyle");
 const bodyy = document.querySelector(".wholebody");
 
-
-document.addEventListener("DOMContentLoaded",()=> {
-  const cards = document.querySelector(".cards");
-  const bodyy = document.querySelector(".wholebody");
-
-  arr.forEach((element) => {
-      cards.innerHTML += `<div class="card flex">
-        <img class="card-img" src= ${element.img} alt="CARD_!_IMG">
-        <div class="card-content flex">
-          <h2 class="card-head">${element.h2}</h2>
-          <p class="content-p">${element.paragraph1}</p>
-          <p class="content-sp">${element.p_description}</p>  
-          <p class="content-p">${element.paragraph2}</p>        
-          <div class="languages flex">
-            <p class="lang">${element.lang1}</p>
-            <p class="lang">${element.lang2}</p>
-            <p class="lang">${element.lang3}</p>
-          </div>
-          <button id = "cardbtn" class="content-btn">${element.button}</button>
-        </div>
-      </div>
-  `
-  });
-  document.querySelectorAll("#cardbtn").forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      popup(arr[index]);
-      bodyy.classList.add("blur");
-      document.querySelector(".inner-container").classList.add("style");
-      document.querySelector(".container").style.display = "block"; 
-    });
-  });
-  function popup(element) {
-    const popup = document.querySelector(".container");
-      popup.innerHTML = 
-        `<div class="inner-container">
-      <div class="icon-head flex">
-          <h2 class="heading flex">${element.h2}</h2>
-          <i class="fa-solid fa-x" id = "close-popup" ></i>
-      </div>
-      <div class="languages flex">
-          <p class="lang">Canopy</p>
-          <p class="lang">Back End Dev</p>
-          <p class="lang">${element.year}</p>
-      </div>
-      <img src= ${element.cardimg} class="wrapimg">
-      <div class="languages flex">
+arr.forEach((element) => {
+    cards.innerHTML += `<div class="card flex">
+      <img class="card-img" src= ${element.img} alt="CARD_!_IMG">
+      <div class="card-content flex">
+        <h2 class="card-head">${element.h2}</h2>
+        <p class="content-p">${element.paragraph1}</p>
+        <p class="content-sp">${element.p_description}</p>  
+        <p class="content-p">${element.paragraph2}</p>        
+        <div class="languages flex">
           <p class="lang">${element.lang1}</p>
-          <p class="lang">${element.lang5}</p>
           <p class="lang">${element.lang2}</p>
+          <p class="lang">${element.lang3}</p>
+        </div>
+        <button id = "cardbtn" class="content-btn">${element.button}</button>
       </div>
-      
-      <div class="paragraph">
-          <p class="p1">${element.paragraph1}</p>
-          <p class="p2">${element.p_description}</p>
-          <p class="p3">${element.paragraph2}</p>
-      </div>
-      
-      <div class="buttons flex">
-          <div class="livebtn flex">
-              <p>See live</p>
-              <img src="/assets/Icon - Export.svg" class="btnimg">
-          </div>
-          <div class="sourcebtn flex">
-              <p>See source</p>
-              <img src="/assets/Icon -GitHub.png" class="btnimg">
-          </div>
-      </div>
-              
-      </div>`;
+    </div>
+`
+});
+document.querySelectorAll("#cardbtn").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    popup(arr[index]);
+    bodyy.classList.add("blur");
+    document.querySelector(".inner-container").classList.add("style");
+    document.querySelector(".container").style.display = "block"; 
+  });
+});
+function popup(element) {
+  const popup = document.querySelector(".container");
+    popup.innerHTML = 
+      `<div class="inner-container">
+    <div class="icon-head flex">
+        <h2 class="heading flex">${element.h2}</h2>
+        <i class="fa-solid fa-x" id = "close-popup" ></i>
+    </div>
+    <div class="languages flex">
+        <p class="lang">Canopy</p>
+        <p class="lang">Back End Dev</p>
+        <p class="lang">${element.year}</p>
+    </div>
+    <img src= ${element.cardimg} class="wrapimg">
+    <div class="languages flex">
+        <p class="lang">${element.lang1}</p>
+        <p class="lang">${element.lang5}</p>
+        <p class="lang">${element.lang2}</p>
+    </div>
+    
+    <div class="paragraph">
+        <p class="p1">${element.paragraph1}</p>
+        <p class="p2">${element.p_description}</p>
+        <p class="p3">${element.paragraph2}</p>
+    </div>
+    
+    <div class="buttons flex">
+        <div class="livebtn flex">
+            <p>See live</p>
+            <img src="/assets/Icon - Export.svg" class="btnimg">
+        </div>
+        <div class="sourcebtn flex">
+            <p>See source</p>
+            <img src="/assets/Icon -GitHub.png" class="btnimg">
+        </div>
+    </div>
+            
+    </div>`;
 
-      document.querySelector("#close-popup").addEventListener("click", () => {
-        popup.style.display = "none"; 
-        bodyy.classList.remove("blur");
-      });
-    }
-
-    const navicon = document.querySelector(".nav-icon");
-
-    navicon.addEventListener("click",(e)=> {
-      herooverlay.classList.add("overlaystyle")   
-      herooverlay.style.display = "block"   
-      herooverlay.innerHTML = `
-      <i class="fa-solid fa-x" id= "closepopup" ></i>
-      <div class = "links-after-click">
-        <p><a class = "link" href="#myportfolio" >Portfolio</a></p>
-        <p><a class = "link" href="#myabout">About</a></p>
-        <p><a class = "link" href="#mycontact">Contact</a></p>
-      </div>`
-      const closeoverlay = document.querySelector("#closepopup");
-      closeoverlay.addEventListener("click",() => {
-        herooverlay.classList.remove("overlaystyle");
-        herooverlay.style.display = "none"   
-      })
-    })
-  })
+    document.querySelector("#close-popup").addEventListener("click", () => {
+      popup.style.display = "none"; 
+      bodyy.classList.remove("blur");
+    });
+  }
 
 
 

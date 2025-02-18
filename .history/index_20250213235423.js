@@ -61,13 +61,10 @@ arr = [
 ];
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
-const herooverlay = document.querySelector(".herostyle");
-const bodyy = document.querySelector(".wholebody");
-
-
 document.addEventListener("DOMContentLoaded",()=> {
   const cards = document.querySelector(".cards");
   const bodyy = document.querySelector(".wholebody");
+  const herooverlay = document.querySelector(".herostyle");
 
   arr.forEach((element) => {
       cards.innerHTML += `<div class="card flex">
@@ -141,23 +138,25 @@ document.addEventListener("DOMContentLoaded",()=> {
     }
 
     const navicon = document.querySelector(".nav-icon");
+    const closeoverlay = document.querySelector("#close-popup")
 
-    navicon.addEventListener("click",(e)=> {
-      herooverlay.classList.add("overlaystyle")   
-      herooverlay.style.display = "block"   
+    navicon.addEventListener("click",()=> {
+      herooverlay.classList.add("overlaystyle")
       herooverlay.innerHTML = `
-      <i class="fa-solid fa-x" id= "closepopup" ></i>
+      <i class="fa-solid fa-x" id = "close-popup" ></i>
       <div class = "links-after-click">
-        <p><a class = "link" href="#myportfolio" >Portfolio</a></p>
-        <p><a class = "link" href="#myabout">About</a></p>
-        <p><a class = "link" href="#mycontact">Contact</a></p>
+        <p>Portfolio</p>
+        <p>About</p>
+        <p>Contact</p>
       </div>`
-      const closeoverlay = document.querySelector("#closepopup");
       closeoverlay.addEventListener("click",() => {
-        herooverlay.classList.remove("overlaystyle");
-        herooverlay.style.display = "none"   
+        herooverlay.classList.remove("overlaystyle")
+  
       })
     })
+
+    
+
   })
 
 
