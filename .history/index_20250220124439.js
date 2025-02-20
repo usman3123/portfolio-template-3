@@ -158,53 +158,22 @@ document.addEventListener("DOMContentLoaded",()=> {
         herooverlay.style.display = "none"   
       })      
     })
-    const langicon = document.querySelector(".language-icon");
-    const downicon = document.querySelector(".downicon");
-    const langdisplay = document.querySelector(".about-lang-languages");
-    
-    langicon.addEventListener("click", () => {
-      langicon.classList.add("remove"); 
-      downicon.classList.remove("remove"); 
-      langdisplay.classList.add("block"); 
-    });
-    
-    downicon.addEventListener("click", () => {
-      langicon.classList.remove("remove"); 
-      downicon.classList.add("remove"); 
-      langdisplay.classList.remove("block"); 
-    });
-
-    const displayframeworks = document.querySelector(".about-lang-frameworks");
-    const frameicon = document.querySelector(".frame-icon");
-    const ficon = document.querySelector(".ficon");
-    
-    frameicon.addEventListener("click", () => {
-      frameicon.classList.add("remove"); 
-      ficon.classList.remove("remove"); 
-      displayframeworks.classList.add("block"); 
-    });
-    
-    ficon.addEventListener("click", () => {
-      frameicon.classList.remove("remove"); 
-      ficon.classList.add("remove"); 
-      displayframeworks.classList.remove("block"); 
-    });
-
-    const displayskills = document.querySelector(".about-lang-skills");
-    const skillicon = document.querySelector(".skill-icon");
-    const sicon = document.querySelector(".sicon");
-    
-    skillicon.addEventListener("click", () => {
-      skillicon.classList.add("remove"); 
-      sicon.classList.remove("remove"); 
-      displayskills.classList.add("block"); 
-    });
-    
-    sicon.addEventListener("click", () => {
-      skillicon.classList.remove("remove"); 
-      sicon.classList.add("remove"); 
-      displayskills.classList.remove("block"); 
-    });
+    const langicon = document.querySelector(".language-icon")
+      langicon.addEventListener("click", () => {
+        const langdisplay = document.querySelector(".about-lang")
+        const downicon = document.querySelector(".downicon")
+        langdisplay.classList.add("block");
+        langicon.classList.add("remove");
+        downicon.classList.add("block")
+    });   
+    const downicon = document.querySelector(".downicon")
+    downicon.addEventListener("click",()=> {
+      const langdisplay = document.querySelector(".about-lang")
+      const langicon = document.querySelector(".language-icon")
+      downicon.classList.add("remove")
+      langdisplay.classList.add("remove");
+      langicon.classList.add("block")
+    })
   })
 
 

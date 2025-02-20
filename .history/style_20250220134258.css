@@ -291,29 +291,18 @@ bottom: 2500px;
     justify-content: space-between;
     font-size: 25px;
 }
-.about-lang-languages {
-    gap: 20px;
-    padding: 12px;
-    display: none;
-}
-.about-lang-frameworks {
-    gap: 20px;
-    padding: 12px;
-    display: none;
-    flex-direction: column;
-}
-.about-lang-skills {
+.about-lang {
     gap: 20px;
     padding: 12px;
     display: none;
     flex-direction: column;
 }
 .about-lang-img {
-    gap: 30px;
     flex-direction: column;
+    gap: 12px;
 }
 .icon-style {
-    font-size: 60px;
+    font-size: 30px;
 }
 .sty-i {
     font-size: 80px;

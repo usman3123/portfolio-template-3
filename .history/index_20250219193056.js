@@ -158,55 +158,24 @@ document.addEventListener("DOMContentLoaded",()=> {
         herooverlay.style.display = "none"   
       })      
     })
-    const langicon = document.querySelector(".language-icon");
-    const downicon = document.querySelector(".downicon");
-    const langdisplay = document.querySelector(".about-lang-languages");
+    document.addEventListener("DOMContentLoaded", () => {
+      const langicon = document.querySelector(".language-icon");
+      const langdisplay = document.querySelector(".about-lang");
+      const downicon = document.querySelector(".downicon");
     
-    langicon.addEventListener("click", () => {
-      langicon.classList.add("remove"); 
-      downicon.classList.remove("remove"); 
-      langdisplay.classList.add("block"); 
-    });
-    
-    downicon.addEventListener("click", () => {
-      langicon.classList.remove("remove"); 
-      downicon.classList.add("remove"); 
-      langdisplay.classList.remove("block"); 
-    });
-
-    const displayframeworks = document.querySelector(".about-lang-frameworks");
-    const frameicon = document.querySelector(".frame-icon");
-    const ficon = document.querySelector(".ficon");
-    
-    frameicon.addEventListener("click", () => {
-      frameicon.classList.add("remove"); 
-      ficon.classList.remove("remove"); 
-      displayframeworks.classList.add("block"); 
-    });
-    
-    ficon.addEventListener("click", () => {
-      frameicon.classList.remove("remove"); 
-      ficon.classList.add("remove"); 
-      displayframeworks.classList.remove("block"); 
-    });
-
-    const displayskills = document.querySelector(".about-lang-skills");
-    const skillicon = document.querySelector(".skill-icon");
-    const sicon = document.querySelector(".sicon");
-    
-    skillicon.addEventListener("click", () => {
-      skillicon.classList.add("remove"); 
-      sicon.classList.remove("remove"); 
-      displayskills.classList.add("block"); 
-    });
-    
-    sicon.addEventListener("click", () => {
-      skillicon.classList.remove("remove"); 
-      sicon.classList.add("remove"); 
-      displayskills.classList.remove("block"); 
-    });
-  })
-
+      if (langicon && langdisplay && downicon) {
+        const langicon = document.querySelector(".language-icon")
+        langicon.addEventListener("click", () => {
+          langdisplay.classList.toggle("block");
+          langicon.classList.toggle("remove");
+          downicon.classList.toggle("remove");
+          downicon.classList.toggle("block");
+        });
+      } else {
+        console.error("Some elements are missing from the DOM.");
+      }  
+    })
+})  
 
 
 

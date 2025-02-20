@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded",()=> {
     });
 
     const displayframeworks = document.querySelector(".about-lang-frameworks");
-    const frameicon = document.querySelector(".frame-icon");
+    const frameicon = document.querySelector(".skill-icon");
     const ficon = document.querySelector(".ficon");
     
     frameicon.addEventListener("click", () => {
@@ -191,18 +191,18 @@ document.addEventListener("DOMContentLoaded",()=> {
     });
 
     const displayskills = document.querySelector(".about-lang-skills");
-    const skillicon = document.querySelector(".skill-icon");
-    const sicon = document.querySelector(".sicon");
+    const frameicon = document.querySelector(".frame-icon");
+    const ficon = document.querySelector(".ficon");
     
-    skillicon.addEventListener("click", () => {
-      skillicon.classList.add("remove"); 
-      sicon.classList.remove("remove"); 
+    frameicon.addEventListener("click", () => {
+      frameicon.classList.add("remove"); 
+      ficon.classList.remove("remove"); 
       displayskills.classList.add("block"); 
     });
     
-    sicon.addEventListener("click", () => {
-      skillicon.classList.remove("remove"); 
-      sicon.classList.add("remove"); 
+    ficon.addEventListener("click", () => {
+      frameicon.classList.remove("remove"); 
+      ficon.classList.add("remove"); 
       displayskills.classList.remove("block"); 
     });
   })

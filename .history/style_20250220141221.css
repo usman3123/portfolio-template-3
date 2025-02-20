@@ -305,12 +305,12 @@ bottom: 2500px;
 .about-lang-skills {
     gap: 20px;
     padding: 12px;
-    display: none;
+    /* display: none; */
     flex-direction: column;
 }
 .about-lang-img {
-    gap: 30px;
     flex-direction: column;
+    gap: 12px;
 }
 .icon-style {
     font-size: 60px;

@@ -189,22 +189,6 @@ document.addEventListener("DOMContentLoaded",()=> {
       ficon.classList.add("remove"); 
       displayframeworks.classList.remove("block"); 
     });
-
-    const displayskills = document.querySelector(".about-lang-skills");
-    const skillicon = document.querySelector(".skill-icon");
-    const sicon = document.querySelector(".sicon");
-    
-    skillicon.addEventListener("click", () => {
-      skillicon.classList.add("remove"); 
-      sicon.classList.remove("remove"); 
-      displayskills.classList.add("block"); 
-    });
-    
-    sicon.addEventListener("click", () => {
-      skillicon.classList.remove("remove"); 
-      sicon.classList.add("remove"); 
-      displayskills.classList.remove("block"); 
-    });
   })
 
 

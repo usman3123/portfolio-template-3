@@ -291,29 +291,14 @@ bottom: 2500px;
     justify-content: space-between;
     font-size: 25px;
 }
-.about-lang-languages {
+.about-lang {
     gap: 20px;
     padding: 12px;
     display: none;
-}
-.about-lang-frameworks {
-    gap: 20px;
-    padding: 12px;
-    display: none;
-    flex-direction: column;
-}
-.about-lang-skills {
-    gap: 20px;
-    padding: 12px;
-    display: none;
-    flex-direction: column;
 }
 .about-lang-img {
-    gap: 30px;
     flex-direction: column;
-}
-.icon-style {
-    font-size: 60px;
+    gap: 12px;
 }
 .sty-i {
     font-size: 80px;
@@ -405,11 +390,10 @@ html {
     backdrop-filter: blur(8px);
 }
 .remove {
-    display: none !important;
+    display: none;
 }
-
 .block {
-    display: flex !important;
+    display: block;
 }
 
 .blur {

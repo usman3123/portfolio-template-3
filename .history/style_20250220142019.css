@@ -310,7 +310,6 @@ bottom: 2500px;
 }
 .about-lang-img {
     gap: 30px;
-    flex-direction: column;
 }
 .icon-style {
     font-size: 60px;
