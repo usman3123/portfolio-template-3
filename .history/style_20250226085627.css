@@ -16,7 +16,6 @@ body {
 
 .wholebody{
     display: flex;
-    justify-content: center;
 }
 
 /* nav-bar */
@@ -56,7 +55,7 @@ body {
 
 .hero-page {
     background-color: white;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 190px;
     background-image: url(/assets/Header\ bg@2x.png);
     background-size: contain;
     max-height: 846px;
@@ -188,7 +187,7 @@ bottom: 2500px;
 .cards {
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+    gap:142px;
     padding: 24px;
     position: relative;
 }
@@ -414,7 +413,6 @@ html {
     height: 100%;
     background: #f4f5f7;
     backdrop-filter: blur(8px);
-    display: contents;
 }
 .remove {
     display: none !important;
@@ -588,7 +586,7 @@ html {
     .card {
         flex-direction: column;
         max-height: 552px;
-        padding: 25px;
+        padding: 16px;
     }
     .card {
         max-width: 327px;
