@@ -267,7 +267,7 @@ bottom: 2500px;
     flex-direction: column;
     max-width: 447px;
     max-height: 331px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .about-head {
@@ -451,6 +451,10 @@ html {
 .paragraph {
     color: #344563;
     font-size: 2rem;
+}
+
+.applygap {
+    gap: 20px;
 }
 
 .btnimg {
