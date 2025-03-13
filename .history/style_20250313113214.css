@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Poppins", "Lucida sans", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f4f5f7;
 }
 
@@ -57,13 +57,13 @@ body {
 .hero-page {
     background-color: white;
     border-bottom-left-radius: 100px;
-    background-image: url(/assets/hero.png);
+    background-image: url(/assets/Header\ bg@2x.png);
     background-size: contain;
+    max-height: 846px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat; 
     max-width: 1440px;
-    max-height: 846px;
-    height: 100%;
 }
 
 .blur {
@@ -619,12 +619,6 @@ html {
     }
     .card-content {
         gap: 2px;
-    }
-    .hero-page {
-        background-image: url(/assets/header-shapes\ mobile.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; 
     }
 }
 @media (min-width : 700px) {

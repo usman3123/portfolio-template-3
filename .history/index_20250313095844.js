@@ -2,7 +2,7 @@ arr = [
     {
         img : "/assets/card-1img.webp",
         h2 : "Technology Blog",
-        paragraph1 : "<b>Title</b>:Innovating the Future",
+        paragraph1 : "Title :Innovating the Future",
         p_description : "Description: Explore groundbreaking advancements in AI and robotics shaping tomorrow.",
         paragraph2 :"Image Idea: A futuristic image showing AI robots collaborating with humans.",
         lang1 : "Html",
@@ -16,7 +16,7 @@ arr = [
     {
         img : "/assets/card-2img.webp",
         h2 : "Photography Portfolio",
-        paragraph1 : "<b>Title</b>: Lens Stories",
+        paragraph1 : "Title: Lens Stories",
         p_description : "Description: A collection of awe-inspiring moments captured around the globe.",
         paragraph2 :"Image Idea: A scenic view of mountains or a person with a camera.",
         lang1 : "Html",

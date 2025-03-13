@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Poppins", "Lucida sans", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f4f5f7;
 }
 
@@ -620,12 +620,6 @@ html {
     .card-content {
         gap: 2px;
     }
-    .hero-page {
-        background-image: url(/assets/header-shapes\ mobile.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; 
-    }
 }
 @media (min-width : 700px) {
     .nav-links {
@@ -633,6 +627,12 @@ html {
     }
     #nav-icon {
         display: none;
+    }
+    .hero-page {
+        background-image: url(/assets/header-shapes\ mobile.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; 
     }
 
 }
